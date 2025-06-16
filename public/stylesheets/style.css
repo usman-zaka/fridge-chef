@@ -1179,3 +1179,7 @@ body.dark-mode .admin-title {
     color: #e0e0e0;
     margin-top: 20px;
 }
+
+.main_area_content p{
+  color: white;
+}
