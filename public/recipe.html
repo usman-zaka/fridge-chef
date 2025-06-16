@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recipe</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script defer src="javascripts/recipe.js"></script>
+  <script src="/javascripts/logout.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <header class="dashboard-header">
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="myfridge.html">My Fridge</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a id="logout" href="signin.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Darkmode Toggle -->
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </header>
+  <hr>
+
+  <div class="recipe-card">
+    <h1 id="recipeTitle">Loading title...</h1>
+    <img id="recipeImage" src="images/default.webp" alt="Loading image..." />
+
+    <div id="saveContainer" style="text-align: right;">
+      <button id="saveToggle" class="save-toggle unsaved">♥</button>
+      <div id="saveMsg" class="save-message" style="display: none;">Saved!</div>
+    </div>
+
+    <div class="ingredient-list">
+      <h3>Ingredients</h3>
+      <ul id="ingredients">Loading ingredients...</ul>
+    </div>
+
+    <div class="instructions">
+      <h3>Instructions</h3>
+      <div id="instructions">Loading instructions...</div>
+    </div>
+
+    <div class="nutrition">
+      <h3>Nutrition Info</h3>
+      <div id="nutrition">Loading nutrition...</div>
+    </div>
+
+    <div id="error">Could not load recipe :(</div>
+  </div>
+
+  <div class="home-nav">
+    <button type="button" onclick="window.location.href='index.html'">🏠 Home</button>
+    <button type="button" onclick="window.location.href='dashboard.html'">📊 Dashboard</button>
+  </div>
+  <script src="javascripts/darkmode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard – FridgeChef</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/bb49dec098.js" crossorigin="anonymous"></script>
+
+  <!-- Various required scripts for searching functionality, logging out and displaying saved recipes-->
+  <script src="/javascripts/logout.js"></script>
+  <script src="/javascripts/adminCheck.js"></script>
+  <script defer src="/javascripts/search.js"></script>
+  <script defer src="/javascripts/dashboard.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="dashboard-header">
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="myfridge.html">My Fridge</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a id="logout" href="signin.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Darkmode Toggle -->
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </header>
+  <hr>
+
+  <section class="dashboard-container">
+    <h2 id="dashboard-greeting">Welcome to FridgeChef!</h2>
+
+    <!-- Search Bar -->
+    <form id="searchForm">
+      <div>
+        <input type="text" id="searchInput" placeholder="Start exploring recipes..." />
+        <button type="submit">Search</button>
+      </div>
+    </form>
+
+    <!-- Advanced Search Options -->
+    <button id="toggleAdvanced" type="button" onclick="toggleAdvanced()">Advanced Search ⏷</button>
+
+    <div id="advancedOptions">
+      <form id="dietForm">
+        <label><input type="checkbox" name="diet" value="Gluten free"> Gluten free</label>
+        <label><input type="checkbox" name="diet" value="Ketogenic"> Ketogenic</label>
+        <label><input type="checkbox" name="diet" value="Vegetarian"> Vegetarian</label>
+        <label><input type="checkbox" name="diet" value="Vegan"> Vegan</label>
+      </form>
+
+      <label for="calorieSlider">Max Calories: <span id="calorieValue">500</span></label>
+      <input type="range" id="calorieSlider" min="100" max="2000" step="50" value="500">
+    </div>
+
+    <!-- Loading Icon -->
+    <div id="loader">
+      <i class="fas fa-spinner fa-spin fa-2x"></i>
+    </div>
+
+    <!-- Recipe Search Results -->
+    <div id="recipe-container" class="recipe-grid"></div>
+
+    <button type="button" onclick="changePage(-1)">Previous</button>
+    <button type="button" onclick="changePage(1)">Next</button>
+
+    <!-- Saved Recipes -->
+    <div id="saved-recipes-section">
+      <h3>Your Saved Recipes</h3>
+      <div id="saved-recipe-list"></div>
+      <button id="export2csv">Export as CSV</button>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Footer -->
+  <div class="footer-content">
+    <p>© 2025 FridgeChef. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <script src="javascripts/greeting.js"></script>
+  <script src="javascripts/darkmode.js"></script>
+</body>
+
+</html>

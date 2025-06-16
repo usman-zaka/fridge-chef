@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Profile – FridgeChef</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/javascripts/logout.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="dashboard-header">
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="myfridge.html">My Fridge</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a id="logout" href="signin.html">Logout</a></li>
+      </ul>
+    </nav>
+    <!-- Toggle switch -->
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </header>
+  <hr>
+
+  <section class="profile-container">
+    <div class="profile-card">
+      <h2>Your Profile</h2>
+
+      <div class="profile-info">
+        <p><strong>Profile Picture:</strong></p>
+        <img id="profile-pic" src="#" alt="profile pic here">
+        <p><strong>Username:</strong> <span id="profile-username"></span></p>
+        <p><strong>Email:</strong> <span id="profile-email"></span></p>
+      </div>
+
+      <hr>
+
+      <div class="profile-update">
+        <h3>Update Password</h3>
+        <form id="updateForm">
+          <input type="password" id="newPassword" placeholder="Enter new password" required />
+          <button type="submit">Update Password</button>
+        </form>
+      </div>
+
+      <hr>
+      <div class="picture-update">
+        <h3>Update Profile Picture</h3>
+        <form id="pictureForm" enctype="multipart/form-data">
+          <input type="file" id="profilePicInput" accept="image/*" required />
+          <button type="submit">Upload Picture</button>
+        </form>
+      </div>
+
+
+      <p id="pic-message"></p>
+
+      <hr>
+
+      <div class="profile-delete">
+        <h3>Danger Zone</h3>
+        <button type="button" id="deleteAccount">Delete My Account</button>
+      </div>
+
+      <p id="profile-message"></p>
+    </div>
+  </section>
+
+
+  <script src="javascripts/profile.js"></script>
+  <script src="javascripts/pfp.js"></script>
+  <script src="javascripts/darkmode.js"></script>
+
+</body>
+
+</html>

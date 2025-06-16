@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FridgeChef</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!-- Tells the browser how to control the page's dimensions and scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/bb49dec098.js" crossorigin="anonymous"></script>
+
+    <script src="/javascripts/session.js"></script>
+    <script defer src="/javascripts/indexPage.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button" onclick="window.location.href='signin.html'">Login</button>
+
+        <!-- Darkmode Toggle -->
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+
+    </header>
+    <hr>
+
+    <section class="main_area">
+        <section class="main_area_content">
+            <h1>Are you starving?</h1>
+            <p>Delicious recipes right at your fingertips</p>
+            <button class="sign_up" type="button" onclick="window.location.href='signup.html'">Sign Up Now</button>
+        </section>
+    </section>
+
+    <section class="images">
+        <img src="images/food-1.jpg" alt="logo" onclick="">
+        <img src="images/food-2.webp" alt="logo">
+        <img src="images/food-3.jpg" alt="logo">
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <div class="footer-content">
+        <p>© 2025 FridgeChef. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <script src="javascripts/darkmode.js"></script>
+</body>
+
+</html>

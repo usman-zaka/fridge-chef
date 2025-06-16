@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign In – FridgeChef</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/bb49dec098.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+    <button class="login" type="button" onclick="window.location.href='signin.html'">Login</button>
+
+    <!-- Darkmode Toggle -->
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </header>
+  <hr>
+
+  <!-- Sign-In Form -->
+  <section class="signin-container">
+    <div class="sign-in">
+      <h2>Sign In to FridgeChef</h2>
+      <form id="signinForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <p id="error-message">Username or password incorrect.</p>
+
+
+
+        <button type="submit">Sign In</button>
+
+
+
+        <div class="signup-link">
+          Don't have an account? <a href="signup.html">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <hr>
+  <div class="footer-content">
+    <p>© 2025 FridgeChef. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <script src="javascripts/signin.js"></script>
+  <script src="javascripts/darkmode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!-- Tells the browser how to control the page's dimensions and scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/bb49dec098.js" crossorigin="anonymous"></script>
+    <script src="/javascripts/session.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button" onclick="window.location.href='signin.html'">Login</button>
+
+        <!-- Darkmode Toggle -->
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <hr>
+
+    <section class="main_area_about">
+        <section class="main_area_content_about">
+            <h1>Our Mission</h1>
+            <p>Don't know what to cook? Don't know what you could make with the ingredients in your fridge?</p>
+            <p>Well that's why we made FridgeChef!</p>
+            <p>We wanted to make it easy to find delicious recipes so you can save time and energy!</p>
+            <h1>Our Guarantee</h1>
+            <img class="review" src="images/review.png" alt="review">
+            <p>We have had hundreds of satisfied customers!</p>
+        </section>
+    </section>
+    <hr>
+    
+    <!-- Footer -->
+    <div class="footer-content">
+        <p>© 2025 FridgeChef. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <script src="javascripts/darkmode.js"></script>
+</body>
+
+</html>

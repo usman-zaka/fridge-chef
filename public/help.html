@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FridgeChef</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!-- Tells the browser how to control the page's dimensions and scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/bb49dec098.js" crossorigin="anonymous"></script>
+
+    <!-- Various required scripts for faq dropdown and checking whether user is logged in -->
+    <script defer src="javascripts/faq.js"></script>
+    <script src="/javascripts/session.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+        <button class="login" type="button" onclick="window.location.href='signin.html'">Login</button>
+
+        <!-- Darkmode Toggle -->
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <hr>
+    <section class="faq-section">
+        <h1 class="faq-title">Frequently asked questions</h1>
+        <p class="caption">These are the most commonly asked questions about FridgeChef.</p>
+        <ul class="faq">
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>What is FridgeChef?</span>
+                </div>
+                <div class="a">
+                    <p>FridgeChef is a web application that helps you find recipes based on the ingredients you have.
+                        You can search for recipes, save your favorites, and create a virtual fridge with your
+                        ingredients to discover recipes that match what you already have.</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>How do I search for recipes?</span>
+                </div>
+                <div class="a">
+                    <p>You can search for recipes using the search bar on the dashboard page. Simply enter a keyword
+                        (like "pasta" or "chicken") to see a list of matching recipes.</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>How do I save a recipe?</span>
+                </div>
+                <div class="a">
+                    <p>To save a recipe, click the "Save" button on the recipe page. Saved recipes can be viewed in your
+                        "Saved Recipes" section for quick access.</p>
+                </div>
+            </li>
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>What is the Virtual Fridge, and how does it work?</span>
+                </div>
+                <div class="a">
+                    <p>The Virtual Fridge is a feature that lets you add the ingredients you have at home. FridgeChef
+                        will then recommend recipes that you can make using these ingredients. You can also search for
+                        recipes based on the ingredients in your virtual fridge.</p>
+                </div>
+            </li>
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>How do I add ingredients to my Virtual Fridge?</span>
+                </div>
+                <div class="a">
+                    <p>Go to the "My Fridge" section, type in the ingredient you want to add and click "Add". You can
+                        add as many ingredients as you like.</p>
+                </div>
+            </li>
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Can I remove ingredients from my Virtual Fridge?</span>
+                </div>
+                <div class="a">
+                    <p>Yes, you can remove any ingredient by clicking the "X" button next to it in your Virtual Fridge.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Do I need an account to use FridgeChef?</span>
+                </div>
+                <div class="a">
+                    <p>Unfortunately, at the moment we do not support the use of our application without an account.
+                        Creating an account allows you to save recipes and maintain your Virtual Fridge for personalized
+                        recipe recommendations.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- Footer -->
+    <div class="footer-content">
+        <p>© 2025 FridgeChef. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <script src="javascripts/darkmode.js"></script>
+</body>
+
+</html>
