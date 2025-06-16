@@ -1131,13 +1131,6 @@ form button:active {
   background-color: red;
 }
 
-/* Messages */
-p {
-  text-align: center;
-  color: #555;
-  font-size: 14px;
-}
-
 @media (max-width: 768px) {
   .dashboard-header {
     flex-direction: column;
@@ -1178,8 +1171,4 @@ body.dark-mode .admin-title {
     font-size: 28px;
     color: #e0e0e0;
     margin-top: 20px;
-}
-
-.main_area_content p{
-  color: white;
 }
